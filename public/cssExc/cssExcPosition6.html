@@ -1,0 +1,59 @@
+
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+<meta charset="uTF-8">
+<meta name="viewport" content="width=dievice-width, intitial-scale=1.0">
+<title>Donghun</title>
+</head>
+<style type="text/css">
+	#aaa {
+		width: 190px;
+		height: 100px;
+		background-color: red;
+	}
+	#bbb {
+		width: 100px;
+		height: 100px;
+		background-color: blue;
+		
+		position: absolute; 
+/* 		position: relative;  #aaa를 염두하여 위치설정 */
+		/* position: absolute; 같은 위치 내 절대위치(상위 relative전 까지)
+		#aaa를 포함하여 위치설정 */
+		top: 50px;
+		left: 50px;
+	}
+	#ccc {
+		width: 100px;
+		height: 100px;
+		background-color: gray;
+	}
+
+	#ddd {
+	 	position: relative;
+		background-color: aqua;
+		top: 200px;
+		left: 100px;
+	
+	}
+	
+
+</style>
+
+
+
+
+<body>
+	<div id="ddd">
+	<div>aaa
+		<div id="aaa">딸기</div>
+		<div id="bbb">바나나</div>
+		<div id="ccc">사과</div>
+	</div>
+	</div>
+
+
+</body>
+</html>
